@@ -1,0 +1,142 @@
+:root {
+    --step--2: clamp(0.78rem, calc(0.65rem + 0.66vw), 1.12rem);
+    --step--1: clamp(0.94rem, calc(0.76rem + 0.90vw), 1.40rem);
+    --step-0: clamp(1.13rem, calc(0.88rem + 1.22vw), 1.75rem);
+    --step-1: clamp(1.35rem, calc(1.02rem + 1.63vw), 2.19rem);
+    --step-2: clamp(1.62rem, calc(1.19rem + 2.17vw), 2.73rem);
+    --step-3: clamp(1.94rem, calc(1.37rem + 2.88vw), 3.42rem);
+    --step-4: clamp(2.33rem, calc(1.58rem + 3.79vw), 4.27rem);
+    --step-5: clamp(2.80rem, calc(1.81rem + 4.96vw), 5.34rem);
+}
+
+* {
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: beige;
+    font-size: var(--step-0);
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.container {
+    display: grid;
+    height: 100%;
+    border: 3px solid transparent;
+    margin-inline: auto;
+    grid-template-rows: 10% 80% 10%;
+    background-image: url('büro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+nav {
+    background-color: transparent;
+    text-align: center;
+    font-weight: 600;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+h1 {
+    font-size: var(--step-5);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--step-3);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: var(--step--2);
+}
+.launch-time {
+    
+    flex-direction: row;
+    text-align: center;
+}
+
+.launch-time div {
+    flex-basis: 110px;
+    text-align: center;
+   
+}
+
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+    text-align: center;
+}
+
+.content {
+    color: white;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.content-description h1 span {
+    color: darkred;
+}
+
+.content-description {
+    margin: 0px;
+    text-align: center;
+}
+
+.rocket {
+    width: 300px;
+    position: fixed;
+    right: 20%;
+    bottom: 0px;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+.twitter-icon {
+    color: darkred;
+    transition: color 0.2s;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+.twitter-icon:hover {
+    color: red;
+}
+
+.github-icon {
+    color: darkred;
+    transition: color 0.2s;
+}
+
+.github-icon:hover {
+    color: red;
+}
